@@ -25,8 +25,8 @@ Open Data Source
    PostgreSQL Database
        │
        ▼
- Geospatial Processing
-    (GeoPandas)
+   Processing
+    (Pandas)
        │
        ▼
  Data Visualization
@@ -40,20 +40,25 @@ Open Data Source
 wifi-bucaramanga-pipeline
 │
 ├── src
-│   ├── extract.py
-│   ├── transform.py
-│   ├── load.py
-│   └── database.py
+│   ├── __init__.py
+│   ├── database.py
+│   ├── extract.py
+│   ├── load.py
+│   ├── paths.py
+│   └── transform.py
 │
 ├── data
-│   └── raw
+│   ├── maps
+│   ├── outputs
+│   ├── processed
+│   └── raw
 │
-├── notebooks
-│
+├── .env
 ├── main.py
-├── requirements.txt
-├── .env.example
-└── README.md
+├── visualizer_png.py
+├── visualizer_html.py
+├── README.MD
+└── requirements.txt
 ```
 
 ---
@@ -67,6 +72,7 @@ wifi-bucaramanga-pipeline
 * Contextily
 * Matplotlib
 * python-dotenv
+* folium
 
 ---
 
@@ -121,4 +127,4 @@ This project focuses on developing skills in:
 
 ## 👨‍💻 Author
 
-Physics graduate from Universidad Industrial de Santander (UIS) working in data analysis and data engineering projects.
+Physics graduate from Universidad Industrial de Santander (UIS) working towards getting a job in data analysis and data science projects.
