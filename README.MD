@@ -1,12 +1,12 @@
 # 📡 Bucaramanga Public WiFi Zones – Data Pipeline & Geospatial Analysis
 
-This project builds a small **data engineering and geospatial analysis pipeline** to process and visualize public WiFi zones in Bucaramanga, Colombia.
+This project builds a small **data engineering and analysis pipeline** to process and visualize public WiFi zones in Bucaramanga, Colombia.
 
 The goal of the project is to practice:
 
 * Python ETL pipelines
 * PostgreSQL database integration
-* Geospatial analysis with GeoPandas
+* Data analysis with Pandas
 * Interactive and static map visualization
 * Data pipeline structuring for portfolio projects
 
@@ -110,7 +110,7 @@ python main.py
 
 ## 🗺 Visualization
 
-The project generates maps showing the location of public WiFi zones in Bucaramanga using GeoPandas and OpenStreetMap tiles.
+The project generates maps showing the location of public WiFi zones in Bucaramanga. It implements two visualizers, one static using PyPlot (PNG) and one interactive using folium (html).
 
 ---
 
@@ -119,7 +119,7 @@ The project generates maps showing the location of public WiFi zones in Bucarama
 This project focuses on developing skills in:
 
 * Data engineering pipelines
-* Geospatial data processing
+* Data processing
 * Database integration with Python
 * Structuring production-like data projects
 
@@ -127,4 +127,5 @@ This project focuses on developing skills in:
 
 ## 👨‍💻 Author
 
-Physics graduate from Universidad Industrial de Santander (UIS) working towards getting a job in data analysis and data science projects.
+Marcos Marcelino Carrillo Garcia
+Physics graduate from Universidad Industrial de Santander (UIS) building data pipelines and geospatial analytics projects with Python and PostgreSQL.
