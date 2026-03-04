@@ -1,0 +1,3115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_57a576c9b8672b3a2e51681617bcb387 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_57a576c9b8672b3a2e51681617bcb387" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_57a576c9b8672b3a2e51681617bcb387 = L.map(
+                "map_57a576c9b8672b3a2e51681617bcb387",
+                {
+                    center: [7.120313853727144, -73.1233270745429],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_50fb6c36e2297381c189c4c184866899 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_50fb6c36e2297381c189c4c184866899.addTo(map_57a576c9b8672b3a2e51681617bcb387);
+        
+    
+            var marker_cluster_590ead82496c18c94ad7cfa673d4bb97 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_e93edae7d6fbaed7dc2122f26518b7c7 = L.marker(
+                [7.0695805555555555, -73.07078888888888],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_b6a042efb6fe6720f023b1bbb05b109d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_045b305d097535cbbf22d52d7335b842 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55e4c38c354e59f63d29a2d487aa0dcf = $(`<div id="html_55e4c38c354e59f63d29a2d487aa0dcf" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> ALTÍSIMO DE MORRORICO<br> <b>Comuna:</b> COMUNA 14 MORRORICO<br> <b>Barrio:</b> MORRORICO<br> </div>`)[0];
+                popup_045b305d097535cbbf22d52d7335b842.setContent(html_55e4c38c354e59f63d29a2d487aa0dcf);
+            
+        
+
+        marker_e93edae7d6fbaed7dc2122f26518b7c7.bindPopup(popup_045b305d097535cbbf22d52d7335b842)
+        ;
+
+        
+    
+    
+                marker_e93edae7d6fbaed7dc2122f26518b7c7.setIcon(icon_b6a042efb6fe6720f023b1bbb05b109d);
+            
+    
+            var marker_bb47d46096a26b982c4062f75598d7bb = L.marker(
+                [7.1516472222222225, -73.14067777777778],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_cb4f88e6e8c039c8170b9ccfe48e8f49 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e972077b36c85688258605c097b23cba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe8d5fa44e4f66333833934446b5977a = $(`<div id="html_fe8d5fa44e4f66333833934446b5977a" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CAMPO MADRID BETANIA<br> <b>Comuna:</b> COMUNA 1 NORTE<br> <b>Barrio:</b> CAMPO MADRID BETANIA<br> </div>`)[0];
+                popup_e972077b36c85688258605c097b23cba.setContent(html_fe8d5fa44e4f66333833934446b5977a);
+            
+        
+
+        marker_bb47d46096a26b982c4062f75598d7bb.bindPopup(popup_e972077b36c85688258605c097b23cba)
+        ;
+
+        
+    
+    
+                marker_bb47d46096a26b982c4062f75598d7bb.setIcon(icon_cb4f88e6e8c039c8170b9ccfe48e8f49);
+            
+    
+            var marker_ef7dddeb7e86248d24af48db3ee74bd0 = L.marker(
+                [7.105855555555555, -73.12365],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_68c01da121ce766066275afdde939300 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_94249e60a647956dd57e906ac3c0345e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a1dc1f6a886d1abfe112d0912ad1c8b3 = $(`<div id="html_a1dc1f6a886d1abfe112d0912ad1c8b3" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CALLE DE LOS ESTUDIANTES<br> <b>Comuna:</b> COMUNA 7 CIUDADELA<br> <b>Barrio:</b> REAL DE MINAS<br> </div>`)[0];
+                popup_94249e60a647956dd57e906ac3c0345e.setContent(html_a1dc1f6a886d1abfe112d0912ad1c8b3);
+            
+        
+
+        marker_ef7dddeb7e86248d24af48db3ee74bd0.bindPopup(popup_94249e60a647956dd57e906ac3c0345e)
+        ;
+
+        
+    
+    
+                marker_ef7dddeb7e86248d24af48db3ee74bd0.setIcon(icon_68c01da121ce766066275afdde939300);
+            
+    
+            var marker_be01b29c7f5127eaf5a0a79d6523b5b8 = L.marker(
+                [7.128825, -73.12370277777777],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_59b510ff29d52e28b8f720c6524607b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8878bdb6ad343bae6b74d42876fe1dd6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bef2d55c4443695396a1fd55dc6167fe = $(`<div id="html_bef2d55c4443695396a1fd55dc6167fe" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> SAN FRANCISCO - ZONA DEL CALZADO<br> <b>Comuna:</b> COMUNA 3 SAN FRANCISCO<br> <b>Barrio:</b> SAN FRANCISCO<br> </div>`)[0];
+                popup_8878bdb6ad343bae6b74d42876fe1dd6.setContent(html_bef2d55c4443695396a1fd55dc6167fe);
+            
+        
+
+        marker_be01b29c7f5127eaf5a0a79d6523b5b8.bindPopup(popup_8878bdb6ad343bae6b74d42876fe1dd6)
+        ;
+
+        
+    
+    
+                marker_be01b29c7f5127eaf5a0a79d6523b5b8.setIcon(icon_59b510ff29d52e28b8f720c6524607b8);
+            
+    
+            var marker_525dfea71e56eaa7146bab7a85c563bc = L.marker(
+                [7.110311111111111, -73.12412499999999],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_869cd18a7f7b0f14d1a261cee106dde1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33ad03062eb3c2d045e93cae44aa24c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36508541c72135195d440795a2c0b364 = $(`<div id="html_36508541c72135195d440795a2c0b364" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CAMINÓDROMO SAN MIGUEL<br> <b>Comuna:</b> COMUNA 6 LA CONCORDIA<br> <b>Barrio:</b> SAN MIGUEL<br> </div>`)[0];
+                popup_33ad03062eb3c2d045e93cae44aa24c8.setContent(html_36508541c72135195d440795a2c0b364);
+            
+        
+
+        marker_525dfea71e56eaa7146bab7a85c563bc.bindPopup(popup_33ad03062eb3c2d045e93cae44aa24c8)
+        ;
+
+        
+    
+    
+                marker_525dfea71e56eaa7146bab7a85c563bc.setIcon(icon_869cd18a7f7b0f14d1a261cee106dde1);
+            
+    
+            var marker_d4f738b6acb8f8bfaec536c7d48e9d57 = L.marker(
+                [7.092113888888888, -73.10722777777777],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_506f7ee16a656d189db8fe58ad502681 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09c7e2915aadae0e3716928bd86248d5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_432eb5a04344b7b9fa6f3f37d56f2736 = $(`<div id="html_432eb5a04344b7b9fa6f3f37d56f2736" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CANCHA DIAMANTE I<br> <b>Comuna:</b> COMUNA 9 LA PEDREGOSA<br> <b>Barrio:</b> DIAMANTE I<br> </div>`)[0];
+                popup_09c7e2915aadae0e3716928bd86248d5.setContent(html_432eb5a04344b7b9fa6f3f37d56f2736);
+            
+        
+
+        marker_d4f738b6acb8f8bfaec536c7d48e9d57.bindPopup(popup_09c7e2915aadae0e3716928bd86248d5)
+        ;
+
+        
+    
+    
+                marker_d4f738b6acb8f8bfaec536c7d48e9d57.setIcon(icon_506f7ee16a656d189db8fe58ad502681);
+            
+    
+            var marker_571e763b1de691c106fc1faba8957cfb = L.marker(
+                [7.152433333333334, -73.13603333333334],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_cb175be71cac8d8f2cda42ea7a16970c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf99eedbb8a0f4e58faac852f4571cef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_de7d0fe8c6951bb97e81fa81752693a7 = $(`<div id="html_de7d0fe8c6951bb97e81fa81752693a7" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CANCHA EL TEJAR NORTE<br> <b>Comuna:</b> COMUNA 1 NORTE<br> <b>Barrio:</b> BETANIA<br> </div>`)[0];
+                popup_cf99eedbb8a0f4e58faac852f4571cef.setContent(html_de7d0fe8c6951bb97e81fa81752693a7);
+            
+        
+
+        marker_571e763b1de691c106fc1faba8957cfb.bindPopup(popup_cf99eedbb8a0f4e58faac852f4571cef)
+        ;
+
+        
+    
+    
+                marker_571e763b1de691c106fc1faba8957cfb.setIcon(icon_cb175be71cac8d8f2cda42ea7a16970c);
+            
+    
+            var marker_387e0b9025a722d84afca11890de78f5 = L.marker(
+                [7.151894444444445, -73.13470000000001],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_23293e0ef2a9426ab72d2a1a90a8e803 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f63cc4b7da42a535a1366e3f6d74c25 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_71fad2600d4705a28bf9ef019d545a4d = $(`<div id="html_71fad2600d4705a28bf9ef019d545a4d" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CANCHA KENNEDY NORTE<br> <b>Comuna:</b> COMUNA 1 NORTE<br> <b>Barrio:</b> KENNEDY NORTE<br> </div>`)[0];
+                popup_1f63cc4b7da42a535a1366e3f6d74c25.setContent(html_71fad2600d4705a28bf9ef019d545a4d);
+            
+        
+
+        marker_387e0b9025a722d84afca11890de78f5.bindPopup(popup_1f63cc4b7da42a535a1366e3f6d74c25)
+        ;
+
+        
+    
+    
+                marker_387e0b9025a722d84afca11890de78f5.setIcon(icon_23293e0ef2a9426ab72d2a1a90a8e803);
+            
+    
+            var marker_46bb5c1bb1af02c05de9e364d8d38032 = L.marker(
+                [7.144480555555556, -73.130575],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_c872699e38c6197ab62097ad79a5b986 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a7a9e838978a0c2bb74962713cf4047 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_71e2975455933fe82537b56633b422f5 = $(`<div id="html_71e2975455933fe82537b56633b422f5" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CANCHA DE FÚTBOL LA BOMBONERA NORTE<br> <b>Comuna:</b> COMUNA 1 NORTE<br> <b>Barrio:</b> ESPERANZA III<br> </div>`)[0];
+                popup_9a7a9e838978a0c2bb74962713cf4047.setContent(html_71e2975455933fe82537b56633b422f5);
+            
+        
+
+        marker_46bb5c1bb1af02c05de9e364d8d38032.bindPopup(popup_9a7a9e838978a0c2bb74962713cf4047)
+        ;
+
+        
+    
+    
+                marker_46bb5c1bb1af02c05de9e364d8d38032.setIcon(icon_c872699e38c6197ab62097ad79a5b986);
+            
+    
+            var marker_27ab1e9cf359b5889d41b012181e02a8 = L.marker(
+                [7.1528888888888895, -73.13125555555555],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_3f6fdd604241a38cca9c22f4993f4b24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce83f26363cd1a935e2209ee861139bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b09d07229d84d851a9a5fc0cc7d21f6e = $(`<div id="html_b09d07229d84d851a9a5fc0cc7d21f6e" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CANCHA LOS CÓSMOS VILLA ROSA FUNDACIÓN CORDERO<br> <b>Comuna:</b> COMUNA 1 NORTE<br> <b>Barrio:</b> VILLA ROSA<br> </div>`)[0];
+                popup_ce83f26363cd1a935e2209ee861139bc.setContent(html_b09d07229d84d851a9a5fc0cc7d21f6e);
+            
+        
+
+        marker_27ab1e9cf359b5889d41b012181e02a8.bindPopup(popup_ce83f26363cd1a935e2209ee861139bc)
+        ;
+
+        
+    
+    
+                marker_27ab1e9cf359b5889d41b012181e02a8.setIcon(icon_3f6fdd604241a38cca9c22f4993f4b24);
+            
+    
+            var marker_8d683bbe2ed3f04cea2633c20a67736b = L.marker(
+                [7.095116666666667, -73.13682222222224],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_2fc90a21da35de94be55f9b9ec0b5de5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0b9fa2eb443f6007e6d94293cbc288e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_83ffbd4627b3fabde7658b26d2e676f0 = $(`<div id="html_83ffbd4627b3fabde7658b26d2e676f0" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CANCHA BARRIO MANZANARES<br> <b>Comuna:</b> COMUNA 17 MUTIS<br> <b>Barrio:</b> MANZANARES<br> </div>`)[0];
+                popup_e0b9fa2eb443f6007e6d94293cbc288e.setContent(html_83ffbd4627b3fabde7658b26d2e676f0);
+            
+        
+
+        marker_8d683bbe2ed3f04cea2633c20a67736b.bindPopup(popup_e0b9fa2eb443f6007e6d94293cbc288e)
+        ;
+
+        
+    
+    
+                marker_8d683bbe2ed3f04cea2633c20a67736b.setIcon(icon_2fc90a21da35de94be55f9b9ec0b5de5);
+            
+    
+            var marker_d62647dcb9a92bf4921e39b6525fa007 = L.marker(
+                [7.149947222222223, -73.14036666666668],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_8151ea52283ade94de3e5c9c51c46d56 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4753943a7fa28d940c6cac5f3242ad0f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2bb79a2432d105961610049833ceb412 = $(`<div id="html_2bb79a2432d105961610049833ceb412" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CANCHA MARIA PAZ NORTE<br> <b>Comuna:</b> COMUNA 1 NORTE<br> <b>Barrio:</b> MARIA PAZ<br> </div>`)[0];
+                popup_4753943a7fa28d940c6cac5f3242ad0f.setContent(html_2bb79a2432d105961610049833ceb412);
+            
+        
+
+        marker_d62647dcb9a92bf4921e39b6525fa007.bindPopup(popup_4753943a7fa28d940c6cac5f3242ad0f)
+        ;
+
+        
+    
+    
+                marker_d62647dcb9a92bf4921e39b6525fa007.setIcon(icon_8151ea52283ade94de3e5c9c51c46d56);
+            
+    
+            var marker_b3b73d5898ecf0ae207bc0edeebfbd4b = L.marker(
+                [7.097388888888888, -73.119475],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_fe3c913f8b4574cd97823f770494f749 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0705e02e7eff0bdeb705d7d9096144ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_52c4b00b397a8281a546265568c42c9c = $(`<div id="html_52c4b00b397a8281a546265568c42c9c" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CANCHA PABLO VI<br> <b>Comuna:</b> COMUNA 8 SUR OCCIDENTE<br> <b>Barrio:</b> PLABLO VI<br> </div>`)[0];
+                popup_0705e02e7eff0bdeb705d7d9096144ca.setContent(html_52c4b00b397a8281a546265568c42c9c);
+            
+        
+
+        marker_b3b73d5898ecf0ae207bc0edeebfbd4b.bindPopup(popup_0705e02e7eff0bdeb705d7d9096144ca)
+        ;
+
+        
+    
+    
+                marker_b3b73d5898ecf0ae207bc0edeebfbd4b.setIcon(icon_fe3c913f8b4574cd97823f770494f749);
+            
+    
+            var marker_8b3eef4bb6f1f2ec1c26ac9964e513b6 = L.marker(
+                [7.147722222222223, -73.12705833333332],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_3f00d7d90675b0e5555ec715cd56f6fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d558eb20024f1852d8532d832945f48 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b47c73f4d459ee3ea357f3a70145be5 = $(`<div id="html_2b47c73f4d459ee3ea357f3a70145be5" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CANCHA SINTÉTICA ESPERANZA III<br> <b>Comuna:</b> COMUNA 1 NORTE<br> <b>Barrio:</b> LA ESPERANZA III<br> </div>`)[0];
+                popup_8d558eb20024f1852d8532d832945f48.setContent(html_2b47c73f4d459ee3ea357f3a70145be5);
+            
+        
+
+        marker_8b3eef4bb6f1f2ec1c26ac9964e513b6.bindPopup(popup_8d558eb20024f1852d8532d832945f48)
+        ;
+
+        
+    
+    
+                marker_8b3eef4bb6f1f2ec1c26ac9964e513b6.setIcon(icon_3f00d7d90675b0e5555ec715cd56f6fa);
+            
+    
+            var marker_fae47934e36816f2a35f13dfb3f3c49a = L.marker(
+                [7.129747222222222, -73.10516388888888],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_239a95ab93160cb0bf10f654c7ba4164 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1eea45d3fea896ac3989571a9e3976b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a9d54186e151cf3ac83f45ea2be50ce = $(`<div id="html_3a9d54186e151cf3ac83f45ea2be50ce" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CANCHAS LA QUEBRADA<br> <b>Comuna:</b> COMUNA 14 MORRORICO<br> <b>Barrio:</b> ALBANIA<br> </div>`)[0];
+                popup_1eea45d3fea896ac3989571a9e3976b3.setContent(html_3a9d54186e151cf3ac83f45ea2be50ce);
+            
+        
+
+        marker_fae47934e36816f2a35f13dfb3f3c49a.bindPopup(popup_1eea45d3fea896ac3989571a9e3976b3)
+        ;
+
+        
+    
+    
+                marker_fae47934e36816f2a35f13dfb3f3c49a.setIcon(icon_239a95ab93160cb0bf10f654c7ba4164);
+            
+    
+            var marker_9586771a2ca4ef7ef0f7c5f35d473b5f = L.marker(
+                [7.177608333333334, -73.13367777777779],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_2462b12f756255a434472a424a29406a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_935959799fcb483ee86269967aec2eb5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_045f022f08bdc5c6104600973d1f3dcc = $(`<div id="html_045f022f08bdc5c6104600973d1f3dcc" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CENTRO DE SALUD COLORADOS<br> <b>Comuna:</b> COMUNA 1 NORTE<br> <b>Barrio:</b> LOS COLORADOS<br> </div>`)[0];
+                popup_935959799fcb483ee86269967aec2eb5.setContent(html_045f022f08bdc5c6104600973d1f3dcc);
+            
+        
+
+        marker_9586771a2ca4ef7ef0f7c5f35d473b5f.bindPopup(popup_935959799fcb483ee86269967aec2eb5)
+        ;
+
+        
+    
+    
+                marker_9586771a2ca4ef7ef0f7c5f35d473b5f.setIcon(icon_2462b12f756255a434472a424a29406a);
+            
+    
+            var marker_96461f1b0bce9652fb9d7767a2d09c35 = L.marker(
+                [7.114013888888889, -73.13365833333334],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_d7f8fcd0753514405affbacda63baf4b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76d238e435658f597f47e54cc24254bb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c14f8fa3c90241e771ed8cbe5153c70 = $(`<div id="html_8c14f8fa3c90241e771ed8cbe5153c70" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CENTRO DE SALUD LA JOYA<br> <b>Comuna:</b> COMUNA 5 GARCIA ROVIRA<br> <b>Barrio:</b> ALFONSO LOPEZ<br> </div>`)[0];
+                popup_76d238e435658f597f47e54cc24254bb.setContent(html_8c14f8fa3c90241e771ed8cbe5153c70);
+            
+        
+
+        marker_96461f1b0bce9652fb9d7767a2d09c35.bindPopup(popup_76d238e435658f597f47e54cc24254bb)
+        ;
+
+        
+    
+    
+                marker_96461f1b0bce9652fb9d7767a2d09c35.setIcon(icon_d7f8fcd0753514405affbacda63baf4b);
+            
+    
+            var marker_8aeee7280a50675dc907ee7a0c5c957f = L.marker(
+                [7.100577777777778, -73.12983333333332],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_5e50ee2b7787e9dbbdbcc8577d30fc29 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_516e52788afa65de487d12b63bb05a55 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3244eb065841431d2f78f603ab9300d7 = $(`<div id="html_3244eb065841431d2f78f603ab9300d7" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CENTRO RECREATIVO EL MUTIS<br> <b>Comuna:</b> COMUNA 17 MUTIS<br> <b>Barrio:</b> ALVAREZ<br> </div>`)[0];
+                popup_516e52788afa65de487d12b63bb05a55.setContent(html_3244eb065841431d2f78f603ab9300d7);
+            
+        
+
+        marker_8aeee7280a50675dc907ee7a0c5c957f.bindPopup(popup_516e52788afa65de487d12b63bb05a55)
+        ;
+
+        
+    
+    
+                marker_8aeee7280a50675dc907ee7a0c5c957f.setIcon(icon_5e50ee2b7787e9dbbdbcc8577d30fc29);
+            
+    
+            var marker_37328761adc87b6bbd64a5bcabc03c96 = L.marker(
+                [7.100213888888889, -73.11607222222221],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_1b196c116c3f570f0c49137e7bf70340 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_32fcdd8c596ee3f41a3c25958eb8582d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_53e73d7b5274920c39b44b03fbb19525 = $(`<div id="html_53e73d7b5274920c39b44b03fbb19525" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CENTRO RECREATIVO LA VICTORIA<br> <b>Comuna:</b> COMUNA 6 LA CONCORDIA<br> <b>Barrio:</b> LA VICTORIA<br> </div>`)[0];
+                popup_32fcdd8c596ee3f41a3c25958eb8582d.setContent(html_53e73d7b5274920c39b44b03fbb19525);
+            
+        
+
+        marker_37328761adc87b6bbd64a5bcabc03c96.bindPopup(popup_32fcdd8c596ee3f41a3c25958eb8582d)
+        ;
+
+        
+    
+    
+                marker_37328761adc87b6bbd64a5bcabc03c96.setIcon(icon_1b196c116c3f570f0c49137e7bf70340);
+            
+    
+            var marker_16b69d48f56624114e3c8a3a307df0b5 = L.marker(
+                [7.127002777777777, -73.10981388888888],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_35defd109b7cffe21968b23c4e997500 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f5a651bb3cf56a1ce9e1e2a3a17f0dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f294eda5772b41d0be6a7932392bda13 = $(`<div id="html_f294eda5772b41d0be6a7932392bda13" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE LAS AMÉRICAS<br> <b>Comuna:</b> COMUNA 13 ORIENTAL<br> <b>Barrio:</b> ALVAREZ<br> </div>`)[0];
+                popup_7f5a651bb3cf56a1ce9e1e2a3a17f0dc.setContent(html_f294eda5772b41d0be6a7932392bda13);
+            
+        
+
+        marker_16b69d48f56624114e3c8a3a307df0b5.bindPopup(popup_7f5a651bb3cf56a1ce9e1e2a3a17f0dc)
+        ;
+
+        
+    
+    
+                marker_16b69d48f56624114e3c8a3a307df0b5.setIcon(icon_35defd109b7cffe21968b23c4e997500);
+            
+    
+            var marker_470dbffe0ef4f689328312cafd96f01b = L.marker(
+                [7.130613888888888, -73.13443611111111],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_da52fc12448e75d53504f3024392ebc0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f5b52733d91fed82ba5ece906d4b9ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b542695504e1f70cf08e4dfd4e2013a4 = $(`<div id="html_b542695504e1f70cf08e4dfd4e2013a4" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> BARRIO GAITÁN<br> <b>Comuna:</b> COMUNA 4 OCCIDENTAL<br> <b>Barrio:</b> GAITÁN<br> </div>`)[0];
+                popup_3f5b52733d91fed82ba5ece906d4b9ab.setContent(html_b542695504e1f70cf08e4dfd4e2013a4);
+            
+        
+
+        marker_470dbffe0ef4f689328312cafd96f01b.bindPopup(popup_3f5b52733d91fed82ba5ece906d4b9ab)
+        ;
+
+        
+    
+    
+                marker_470dbffe0ef4f689328312cafd96f01b.setIcon(icon_da52fc12448e75d53504f3024392ebc0);
+            
+    
+            var marker_c02d2b10da410e2d98c78ebe48c3653d = L.marker(
+                [7.138422222222222, -73.12209166666666],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_b4bf2cbdf86d9d025ebba9862e68b7b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bff156f222d11dbca6dd820dc7c28f73 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe592a4d8179c0c6f27300d55a10c19e = $(`<div id="html_fe592a4d8179c0c6f27300d55a10c19e" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> COLEGIO SANTANDER<br> <b>Comuna:</b> COMUNA 3 SAN FRANCISCO<br> <b>Barrio:</b> LA UNIVERSIDAD<br> </div>`)[0];
+                popup_bff156f222d11dbca6dd820dc7c28f73.setContent(html_fe592a4d8179c0c6f27300d55a10c19e);
+            
+        
+
+        marker_c02d2b10da410e2d98c78ebe48c3653d.bindPopup(popup_bff156f222d11dbca6dd820dc7c28f73)
+        ;
+
+        
+    
+    
+                marker_c02d2b10da410e2d98c78ebe48c3653d.setIcon(icon_b4bf2cbdf86d9d025ebba9862e68b7b0);
+            
+    
+            var marker_3622a4721c0b020e3930ecb9aaac1dd3 = L.marker(
+                [7.137513888888889, -73.1185861111111],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_ae0357e776ba54a9e6127addb7c1adca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb06b528c572fe0cd2f3a54e0ba722b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3e827f653682277a421f7c278644caa9 = $(`<div id="html_3e827f653682277a421f7c278644caa9" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> COLEGIO TECNOLÓGICO<br> <b>Comuna:</b> COMUNA 3 SAN FRANCISCO<br> <b>Barrio:</b> LA UNIVERSIDAD<br> </div>`)[0];
+                popup_eb06b528c572fe0cd2f3a54e0ba722b4.setContent(html_3e827f653682277a421f7c278644caa9);
+            
+        
+
+        marker_3622a4721c0b020e3930ecb9aaac1dd3.bindPopup(popup_eb06b528c572fe0cd2f3a54e0ba722b4)
+        ;
+
+        
+    
+    
+                marker_3622a4721c0b020e3930ecb9aaac1dd3.setIcon(icon_ae0357e776ba54a9e6127addb7c1adca);
+            
+    
+            var marker_17fe34963522ee5b0b11e0715de6fef6 = L.marker(
+                [7.106472222222222, -73.11269999999999],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_b2f1e31b7090062040f8046940318507 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa4881fb1fffaf55ed425755e20bcbda = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_632967937716fadc12b9e0233743b81a = $(`<div id="html_632967937716fadc12b9e0233743b81a" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE LAS MERCEDES<br> <b>Comuna:</b> COMUNA 12 CABECERA DEL LLANO<br> <b>Barrio:</b> LAS MERCEDES<br> </div>`)[0];
+                popup_aa4881fb1fffaf55ed425755e20bcbda.setContent(html_632967937716fadc12b9e0233743b81a);
+            
+        
+
+        marker_17fe34963522ee5b0b11e0715de6fef6.bindPopup(popup_aa4881fb1fffaf55ed425755e20bcbda)
+        ;
+
+        
+    
+    
+                marker_17fe34963522ee5b0b11e0715de6fef6.setIcon(icon_b2f1e31b7090062040f8046940318507);
+            
+    
+            var marker_5ea6e2e158e27cbf4eb51caa357967c6 = L.marker(
+                [7.115372222222222, -73.11024166666667],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_0e4a60c17d43f421e3cacc22f4bd1e8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f343a605f5eb1856edfa58e1c2d0ff18 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ebc2b787e8d64b110506901bc26f321b = $(`<div id="html_ebc2b787e8d64b110506901bc26f321b" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CUADRA PLAY<br> <b>Comuna:</b> COMUNA 12 CABECERA DEL LLANO<br> <b>Barrio:</b> CABECERA DEL LLANO<br> </div>`)[0];
+                popup_f343a605f5eb1856edfa58e1c2d0ff18.setContent(html_ebc2b787e8d64b110506901bc26f321b);
+            
+        
+
+        marker_5ea6e2e158e27cbf4eb51caa357967c6.bindPopup(popup_f343a605f5eb1856edfa58e1c2d0ff18)
+        ;
+
+        
+    
+    
+                marker_5ea6e2e158e27cbf4eb51caa357967c6.setIcon(icon_0e4a60c17d43f421e3cacc22f4bd1e8d);
+            
+    
+            var marker_8ddc36643636b0eb3440677571929032 = L.marker(
+                [7.092527777777778, -73.1130361111111],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_5a39d97e0ff75f1ed2ac7ad6eca8bf37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_027ed4036c32963d7580412b02388c9e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ed77c5cf27ce470fcb443b8db32c23c = $(`<div id="html_0ed77c5cf27ce470fcb443b8db32c23c" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> DIAMANTE II<br> <b>Comuna:</b> COMUNA 10 PROVENZA<br> <b>Barrio:</b> DIAMANTE II<br> </div>`)[0];
+                popup_027ed4036c32963d7580412b02388c9e.setContent(html_0ed77c5cf27ce470fcb443b8db32c23c);
+            
+        
+
+        marker_8ddc36643636b0eb3440677571929032.bindPopup(popup_027ed4036c32963d7580412b02388c9e)
+        ;
+
+        
+    
+    
+                marker_8ddc36643636b0eb3440677571929032.setIcon(icon_5a39d97e0ff75f1ed2ac7ad6eca8bf37);
+            
+    
+            var marker_fb329e5307598de35451981121c0d186 = L.marker(
+                [7.135552777777778, -73.11805277777778],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_8c2e44c303d02869478f3417765660af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05d8f507b083bc538a40f0509152d9fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ceff309f655121f5634d472743124a6 = $(`<div id="html_6ceff309f655121f5634d472743124a6" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> ESTADIO AMÉRICO MONTANINI<br> <b>Comuna:</b> COMUNA 3 SAN FRANCISCO<br> <b>Barrio:</b> LA UNIVERSIDAD<br> </div>`)[0];
+                popup_05d8f507b083bc538a40f0509152d9fc.setContent(html_6ceff309f655121f5634d472743124a6);
+            
+        
+
+        marker_fb329e5307598de35451981121c0d186.bindPopup(popup_05d8f507b083bc538a40f0509152d9fc)
+        ;
+
+        
+    
+    
+                marker_fb329e5307598de35451981121c0d186.setIcon(icon_8c2e44c303d02869478f3417765660af);
+            
+    
+            var marker_a5388a59ee9c9d7fb84c41d2cc2cff16 = L.marker(
+                [7.088986111111111, -73.11976666666666],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_324d3a8cafca271452bae9cd3b00afd7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7034aaa291847916cf8f5c4a15c6681c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_feb8c593ab9f74b9ac5465b9efd0098d = $(`<div id="html_feb8c593ab9f74b9ac5465b9efd0098d" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE FONTANA<br> <b>Comuna:</b> COMUNA 10 PROVENZA<br> <b>Barrio:</b> FONTANA<br> </div>`)[0];
+                popup_7034aaa291847916cf8f5c4a15c6681c.setContent(html_feb8c593ab9f74b9ac5465b9efd0098d);
+            
+        
+
+        marker_a5388a59ee9c9d7fb84c41d2cc2cff16.bindPopup(popup_7034aaa291847916cf8f5c4a15c6681c)
+        ;
+
+        
+    
+    
+                marker_a5388a59ee9c9d7fb84c41d2cc2cff16.setIcon(icon_324d3a8cafca271452bae9cd3b00afd7);
+            
+    
+            var marker_6f95c69b11963a4e3ffa94f1733ee010 = L.marker(
+                [7.138080555555556, -73.12030277777777],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_fb73c3d5050f2b68c24f94e99335cd58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cab3bb704a7b05cbb93d98a01eb15c55 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1d4a5fb043d38643e4f7437f5685aa59 = $(`<div id="html_1d4a5fb043d38643e4f7437f5685aa59" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> GLORIETA CABALLO SIMÓN BOLÍVAR<br> <b>Comuna:</b> COMUNA 3 SAN FRANCISCO<br> <b>Barrio:</b> LA UNIVERSIDAD<br> </div>`)[0];
+                popup_cab3bb704a7b05cbb93d98a01eb15c55.setContent(html_1d4a5fb043d38643e4f7437f5685aa59);
+            
+        
+
+        marker_6f95c69b11963a4e3ffa94f1733ee010.bindPopup(popup_cab3bb704a7b05cbb93d98a01eb15c55)
+        ;
+
+        
+    
+    
+                marker_6f95c69b11963a4e3ffa94f1733ee010.setIcon(icon_fb73c3d5050f2b68c24f94e99335cd58);
+            
+    
+            var marker_6312ea327989a875f1d7a8776adc8862 = L.marker(
+                [7.131494444444444, -73.12451944444443],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_0f11a00da4bcc5a71228cd5290f25f63 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e84cb44638cc630f88f909bff7c68b8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3e2ed6036f0854c04bb064c1a4771180 = $(`<div id="html_3e2ed6036f0854c04bb064c1a4771180" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> GLORIETA PARQUE SAN FRANCISCO<br> <b>Comuna:</b> COMUNA 3 SAN FRANCISCO<br> <b>Barrio:</b> SAN FRANCISCO<br> </div>`)[0];
+                popup_3e84cb44638cc630f88f909bff7c68b8.setContent(html_3e2ed6036f0854c04bb064c1a4771180);
+            
+        
+
+        marker_6312ea327989a875f1d7a8776adc8862.bindPopup(popup_3e84cb44638cc630f88f909bff7c68b8)
+        ;
+
+        
+    
+    
+                marker_6312ea327989a875f1d7a8776adc8862.setIcon(icon_0f11a00da4bcc5a71228cd5290f25f63);
+            
+    
+            var marker_9bd010662307959ea28c5bcf40916d57 = L.marker(
+                [7.148436111111112, -73.13469444444445],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_5e38dac98cfb25d00583312e94fbc4a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e525dac10f72b03845546bf3c6999c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8b48d18718854b219cc210eeb77edf5b = $(`<div id="html_8b48d18718854b219cc210eeb77edf5b" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CENTRO RECREATIVO EL NORTE<br> <b>Comuna:</b> COMUNA 1 NORTE<br> <b>Barrio:</b> EL TEJAR NORTE<br> </div>`)[0];
+                popup_5e525dac10f72b03845546bf3c6999c8.setContent(html_8b48d18718854b219cc210eeb77edf5b);
+            
+        
+
+        marker_9bd010662307959ea28c5bcf40916d57.bindPopup(popup_5e525dac10f72b03845546bf3c6999c8)
+        ;
+
+        
+    
+    
+                marker_9bd010662307959ea28c5bcf40916d57.setIcon(icon_5e38dac98cfb25d00583312e94fbc4a8);
+            
+    
+            var marker_78e77b1bc403b731b03b7ea86a59b7e4 = L.marker(
+                [7.1013166666666665, -73.10638333333333],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_30ca2fc6aad40063cd94250f4edfcccf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f68532a83020f15e9f833503fe573449 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13e9a03c7709bc95e59e069eb3f361bd = $(`<div id="html_13e9a03c7709bc95e59e069eb3f361bd" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> MONUMENTO A LA HORMIGA - NEOMUNDO<br> <b>Comuna:</b> COMUNA 16 LAGOS DEL CACIQUE<br> <b>Barrio:</b> TEJAR<br> </div>`)[0];
+                popup_f68532a83020f15e9f833503fe573449.setContent(html_13e9a03c7709bc95e59e069eb3f361bd);
+            
+        
+
+        marker_78e77b1bc403b731b03b7ea86a59b7e4.bindPopup(popup_f68532a83020f15e9f833503fe573449)
+        ;
+
+        
+    
+    
+                marker_78e77b1bc403b731b03b7ea86a59b7e4.setIcon(icon_30ca2fc6aad40063cd94250f4edfcccf);
+            
+    
+            var marker_34d75f6fd216bcbba5ab7d279b9060ec = L.marker(
+                [7.122855555555555, -73.12207777777778],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_64b04e9cd63a37ce4de43c7a3b1be494 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9be0b9757a28f44efa5c2e4e69ca0806 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f3e9a2f7ee400e8f79e33d33b7c591be = $(`<div id="html_f3e9a2f7ee400e8f79e33d33b7c591be" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE ANTONIA SANTOS<br> <b>Comuna:</b> COMUNA 13 ORIENTAL<br> <b>Barrio:</b> ANTONIA SANTOS<br> </div>`)[0];
+                popup_9be0b9757a28f44efa5c2e4e69ca0806.setContent(html_f3e9a2f7ee400e8f79e33d33b7c591be);
+            
+        
+
+        marker_34d75f6fd216bcbba5ab7d279b9060ec.bindPopup(popup_9be0b9757a28f44efa5c2e4e69ca0806)
+        ;
+
+        
+    
+    
+                marker_34d75f6fd216bcbba5ab7d279b9060ec.setIcon(icon_64b04e9cd63a37ce4de43c7a3b1be494);
+            
+    
+            var marker_85382b5882e585f60f8bce4e01627899 = L.marker(
+                [7.106191666666667, -73.12141944444444],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_0780147f7f5eecb71a25539ca0614734 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_49cbaee5e03622d7fee74480f1fe4c18 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8287b4b35df1389fb2b3587bcf85ed69 = $(`<div id="html_8287b4b35df1389fb2b3587bcf85ed69" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE DE LOS SUEÑOS<br> <b>Comuna:</b> COMUNA 7 CIUDADELA<br> <b>Barrio:</b> REAL DE MINAS<br> </div>`)[0];
+                popup_49cbaee5e03622d7fee74480f1fe4c18.setContent(html_8287b4b35df1389fb2b3587bcf85ed69);
+            
+        
+
+        marker_85382b5882e585f60f8bce4e01627899.bindPopup(popup_49cbaee5e03622d7fee74480f1fe4c18)
+        ;
+
+        
+    
+    
+                marker_85382b5882e585f60f8bce4e01627899.setIcon(icon_0780147f7f5eecb71a25539ca0614734);
+            
+    
+            var marker_0585ec84acff2014f17c307482157ffa = L.marker(
+                [7.118872222222222, -73.12001388888888],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_4f3f9406906982a3d3c68b8b0e26c4ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e9d7e2d7f77616b0a4dea1bfe18a3d02 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_30975e735840a12c2004532b9777ebc8 = $(`<div id="html_30975e735840a12c2004532b9777ebc8" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE BOLÍVAR<br> <b>Comuna:</b> COMUNA 13 ORIENTAL<br> <b>Barrio:</b> BOLIVAR<br> </div>`)[0];
+                popup_e9d7e2d7f77616b0a4dea1bfe18a3d02.setContent(html_30975e735840a12c2004532b9777ebc8);
+            
+        
+
+        marker_0585ec84acff2014f17c307482157ffa.bindPopup(popup_e9d7e2d7f77616b0a4dea1bfe18a3d02)
+        ;
+
+        
+    
+    
+                marker_0585ec84acff2014f17c307482157ffa.setIcon(icon_4f3f9406906982a3d3c68b8b0e26c4ac);
+            
+    
+            var marker_080acb0e1e478e62bf4b90b59627c4bc = L.marker(
+                [7.1266083333333325, -73.10695277777778],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_4c6f46252130e4032c4aaa841f45442d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e6fc66be694bb47831c8d314e118605 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f8681629d78cf9cf02c7aebb5f2d9dd5 = $(`<div id="html_f8681629d78cf9cf02c7aebb5f2d9dd5" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE BOSQUE ENCANTADO<br> <b>Comuna:</b> COMUNA 13 ORIENTAL<br> <b>Barrio:</b> ALVAREZ<br> </div>`)[0];
+                popup_5e6fc66be694bb47831c8d314e118605.setContent(html_f8681629d78cf9cf02c7aebb5f2d9dd5);
+            
+        
+
+        marker_080acb0e1e478e62bf4b90b59627c4bc.bindPopup(popup_5e6fc66be694bb47831c8d314e118605)
+        ;
+
+        
+    
+    
+                marker_080acb0e1e478e62bf4b90b59627c4bc.setIcon(icon_4c6f46252130e4032c4aaa841f45442d);
+            
+    
+            var marker_c498b280c0ab6e12e02b6375d58e3745 = L.marker(
+                [7.164177777777778, -73.14020555555557],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_a3f3ab36d9f524b0028dbb52e8f6dca3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ba2324dc4822f6fa6a307f6b5f0d5c3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2cd41dda93d3deb527e29d95312f39bd = $(`<div id="html_2cd41dda93d3deb527e29d95312f39bd" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE CAFÉ MADRID NORTE<br> <b>Comuna:</b> COMUNA 1 NORTE<br> <b>Barrio:</b> CAFÉ MADRID<br> </div>`)[0];
+                popup_4ba2324dc4822f6fa6a307f6b5f0d5c3.setContent(html_2cd41dda93d3deb527e29d95312f39bd);
+            
+        
+
+        marker_c498b280c0ab6e12e02b6375d58e3745.bindPopup(popup_4ba2324dc4822f6fa6a307f6b5f0d5c3)
+        ;
+
+        
+    
+    
+                marker_c498b280c0ab6e12e02b6375d58e3745.setIcon(icon_a3f3ab36d9f524b0028dbb52e8f6dca3);
+            
+    
+            var marker_1c90eb97bdc46be50fea67a66660e810 = L.marker(
+                [7.1121, -73.11057222222222],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_b965113aad95b8ddee7d8b54a17d60d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30b24dc71099419e7f8c98396a697223 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b4dcca2935624a4e4efde37cc4dca79 = $(`<div id="html_6b4dcca2935624a4e4efde37cc4dca79" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE CALLE 52<br> <b>Comuna:</b> COMUNA 12 CABECERA DEL LLANO<br> <b>Barrio:</b> ANTIGUO CAMPESTRE<br> </div>`)[0];
+                popup_30b24dc71099419e7f8c98396a697223.setContent(html_6b4dcca2935624a4e4efde37cc4dca79);
+            
+        
+
+        marker_1c90eb97bdc46be50fea67a66660e810.bindPopup(popup_30b24dc71099419e7f8c98396a697223)
+        ;
+
+        
+    
+    
+                marker_1c90eb97bdc46be50fea67a66660e810.setIcon(icon_b965113aad95b8ddee7d8b54a17d60d7);
+            
+    
+            var marker_3820e1f7f60c3cb148b43356cb9dc3fb = L.marker(
+                [7.087686111111111, -73.1200361111111],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_b0f095f69a18a8c4bb37dc593002a599 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc3e55ce943ede81ac76606680fa2101 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7dccd9d7658ad86c50a8a8e7b1bcab55 = $(`<div id="html_7dccd9d7658ad86c50a8a8e7b1bcab55" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE CAMINÓDROMO FONTANA REAL<br> <b>Comuna:</b> COMUNA 10 PROVENZA<br> <b>Barrio:</b> FONTANA REAL<br> </div>`)[0];
+                popup_dc3e55ce943ede81ac76606680fa2101.setContent(html_7dccd9d7658ad86c50a8a8e7b1bcab55);
+            
+        
+
+        marker_3820e1f7f60c3cb148b43356cb9dc3fb.bindPopup(popup_dc3e55ce943ede81ac76606680fa2101)
+        ;
+
+        
+    
+    
+                marker_3820e1f7f60c3cb148b43356cb9dc3fb.setIcon(icon_b0f095f69a18a8c4bb37dc593002a599);
+            
+    
+            var marker_f614cae9f9d0d771a9338e5e16387595 = L.marker(
+                [7.101452777777777, -73.14075555555556],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_75e5b17f8a805456843c76fde5487bda = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5437f9e4f08a3a8ac355c9d967b681d5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0a63c9ab211a91dd1b161fb0346d26b = $(`<div id="html_d0a63c9ab211a91dd1b161fb0346d26b" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE MÚLTIPLE CAMPO HERMOSO<br> <b>Comuna:</b> COMUNA 5 GARCIA ROVIRA<br> <b>Barrio:</b> CAMPO HERMOSO<br> </div>`)[0];
+                popup_5437f9e4f08a3a8ac355c9d967b681d5.setContent(html_d0a63c9ab211a91dd1b161fb0346d26b);
+            
+        
+
+        marker_f614cae9f9d0d771a9338e5e16387595.bindPopup(popup_5437f9e4f08a3a8ac355c9d967b681d5)
+        ;
+
+        
+    
+    
+                marker_f614cae9f9d0d771a9338e5e16387595.setIcon(icon_75e5b17f8a805456843c76fde5487bda);
+            
+    
+            var marker_ca6a48037d5b2d083d19c8bdfc3fa67d = L.marker(
+                [7.122127777777777, -73.125125],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_e8c3edc78b78d6bcdd004d123db2a4d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3b6f2998dc7e6a30664fad564272491 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a9ae19c3eafec3be7deb9efcf9a245e = $(`<div id="html_3a9ae19c3eafec3be7deb9efcf9a245e" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE CENTENARIO<br> <b>Comuna:</b> COMUNA 15 CENTRO<br> <b>Barrio:</b> CENTRO<br> </div>`)[0];
+                popup_a3b6f2998dc7e6a30664fad564272491.setContent(html_3a9ae19c3eafec3be7deb9efcf9a245e);
+            
+        
+
+        marker_ca6a48037d5b2d083d19c8bdfc3fa67d.bindPopup(popup_a3b6f2998dc7e6a30664fad564272491)
+        ;
+
+        
+    
+    
+                marker_ca6a48037d5b2d083d19c8bdfc3fa67d.setIcon(icon_e8c3edc78b78d6bcdd004d123db2a4d8);
+            
+    
+            var marker_3949ad6f2c1348ccc255704f9ee5cf1c = L.marker(
+                [7.097786111111111, -73.12686666666666],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_1eecab9aea2d71f3e340433546091f2a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0722bd31b4b730eccfa1038fcbf0b585 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bcb28cfb54ee8ae9791efd155fb6512e = $(`<div id="html_bcb28cfb54ee8ae9791efd155fb6512e" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE CIUDAD BOLÍVAR<br> <b>Comuna:</b> COMUNA 7 CIUDADELA<br> <b>Barrio:</b> REAL DE MINAS<br> </div>`)[0];
+                popup_0722bd31b4b730eccfa1038fcbf0b585.setContent(html_bcb28cfb54ee8ae9791efd155fb6512e);
+            
+        
+
+        marker_3949ad6f2c1348ccc255704f9ee5cf1c.bindPopup(popup_0722bd31b4b730eccfa1038fcbf0b585)
+        ;
+
+        
+    
+    
+                marker_3949ad6f2c1348ccc255704f9ee5cf1c.setIcon(icon_1eecab9aea2d71f3e340433546091f2a);
+            
+    
+            var marker_95baa66a383d4f45f0decc3ebf113327 = L.marker(
+                [7.157836111111111, -73.13068888888888],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_42ee4780c5453907e91b2effcf3065fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_833a262fccbfd5be1a96a0055cfc01d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3de6339c880330357ca6701630a15bf3 = $(`<div id="html_3de6339c880330357ca6701630a15bf3" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE CLAVERIANO NORTE<br> <b>Comuna:</b> COMUNA 1 NORTE<br> <b>Barrio:</b> CLAVERIANO<br> </div>`)[0];
+                popup_833a262fccbfd5be1a96a0055cfc01d4.setContent(html_3de6339c880330357ca6701630a15bf3);
+            
+        
+
+        marker_95baa66a383d4f45f0decc3ebf113327.bindPopup(popup_833a262fccbfd5be1a96a0055cfc01d4)
+        ;
+
+        
+    
+    
+                marker_95baa66a383d4f45f0decc3ebf113327.setIcon(icon_42ee4780c5453907e91b2effcf3065fa);
+            
+    
+            var marker_3c28b61dcc7e021a3adbd00e568fbfe6 = L.marker(
+                [7.0761611111111105, -73.11818333333332],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_593ea92fc9b8d07f0da67033fe65fc53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e4bad5a38911a93f70fb2ad7a4c25442 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_223686afeec26fb1b09e2f1573c49eb3 = $(`<div id="html_223686afeec26fb1b09e2f1573c49eb3" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE CRISTAL ALTO<br> <b>Comuna:</b> COMUNA 10 PROVENZA<br> <b>Barrio:</b> CRISTAL ALTO<br> </div>`)[0];
+                popup_e4bad5a38911a93f70fb2ad7a4c25442.setContent(html_223686afeec26fb1b09e2f1573c49eb3);
+            
+        
+
+        marker_3c28b61dcc7e021a3adbd00e568fbfe6.bindPopup(popup_e4bad5a38911a93f70fb2ad7a4c25442)
+        ;
+
+        
+    
+    
+                marker_3c28b61dcc7e021a3adbd00e568fbfe6.setIcon(icon_593ea92fc9b8d07f0da67033fe65fc53);
+            
+    
+            var marker_1cab4ab4e9265672d80fc440589dedf6 = L.marker(
+                [7.1364222222222224, -73.12858055555554],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_d442bac92d8047d1c0bdfa7dde2f607c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9db99ac62d0e9faa0c0cc84dd3f5a2f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b33f399511fa2b3eaac63bd3ac6edc1 = $(`<div id="html_7b33f399511fa2b3eaac63bd3ac6edc1" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE CRISTO REY<br> <b>Comuna:</b> COMUNA 3 SAN FRANCISCO<br> <b>Barrio:</b> COMUNEROS<br> </div>`)[0];
+                popup_b9db99ac62d0e9faa0c0cc84dd3f5a2f.setContent(html_7b33f399511fa2b3eaac63bd3ac6edc1);
+            
+        
+
+        marker_1cab4ab4e9265672d80fc440589dedf6.bindPopup(popup_b9db99ac62d0e9faa0c0cc84dd3f5a2f)
+        ;
+
+        
+    
+    
+                marker_1cab4ab4e9265672d80fc440589dedf6.setIcon(icon_d442bac92d8047d1c0bdfa7dde2f607c);
+            
+    
+            var marker_a5466ab4328bb79529240c59e77c3650 = L.marker(
+                [7.108077777777777, -73.13740277777778],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_e244aa918e496b256a5eb89660a9a7ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_065b121c25ac35452c161c3c86ea8f32 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d1f528cbd8892be21eaf704e60db5df = $(`<div id="html_9d1f528cbd8892be21eaf704e60db5df" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE DE LA VIDA<br> <b>Comuna:</b> COMUNA 5 GARCIA ROVIRA<br> <b>Barrio:</b> CAMPO HERMOSO<br> </div>`)[0];
+                popup_065b121c25ac35452c161c3c86ea8f32.setContent(html_9d1f528cbd8892be21eaf704e60db5df);
+            
+        
+
+        marker_a5466ab4328bb79529240c59e77c3650.bindPopup(popup_065b121c25ac35452c161c3c86ea8f32)
+        ;
+
+        
+    
+    
+                marker_a5466ab4328bb79529240c59e77c3650.setIcon(icon_e244aa918e496b256a5eb89660a9a7ef);
+            
+    
+            var marker_d14c221093cc29d9473b093e6b06906c = L.marker(
+                [7.125305555555555, -73.11844722222222],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_5839f73bd093fa57e29ee0477f9d7f9e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa1fdb9ab134d94b55b2d44eb6e933f1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a13f6784a06d548e1f7373041b7f372 = $(`<div id="html_4a13f6784a06d548e1f7373041b7f372" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE DE LOS NIÑOS<br> <b>Comuna:</b> COMUNA 13 ORIENTAL<br> <b>Barrio:</b> ANTONIA SANTOS<br> </div>`)[0];
+                popup_aa1fdb9ab134d94b55b2d44eb6e933f1.setContent(html_4a13f6784a06d548e1f7373041b7f372);
+            
+        
+
+        marker_d14c221093cc29d9473b093e6b06906c.bindPopup(popup_aa1fdb9ab134d94b55b2d44eb6e933f1)
+        ;
+
+        
+    
+    
+                marker_d14c221093cc29d9473b093e6b06906c.setIcon(icon_5839f73bd093fa57e29ee0477f9d7f9e);
+            
+    
+            var marker_5c2a41c69054fc2060ac15a424aa7fb8 = L.marker(
+                [7.091469444444444, -73.14350277777778],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_43ca55b4ebdcb94b7d87e35290d72ca3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f9c6bd4ced08b56ed28b0a97c9cf684 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_021406a1d7212084b571018743bc88f9 = $(`<div id="html_021406a1d7212084b571018743bc88f9" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE ESTORAQUES<br> <b>Comuna:</b> COMUNA 17 MUTIS<br> <b>Barrio:</b> ESTORAQUES<br> </div>`)[0];
+                popup_1f9c6bd4ced08b56ed28b0a97c9cf684.setContent(html_021406a1d7212084b571018743bc88f9);
+            
+        
+
+        marker_5c2a41c69054fc2060ac15a424aa7fb8.bindPopup(popup_1f9c6bd4ced08b56ed28b0a97c9cf684)
+        ;
+
+        
+    
+    
+                marker_5c2a41c69054fc2060ac15a424aa7fb8.setIcon(icon_43ca55b4ebdcb94b7d87e35290d72ca3);
+            
+    
+            var marker_79a1eeaf6690a0c5afb0145238cb79a5 = L.marker(
+                [7.1171999999999995, -73.12991388888888],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_e7d5c6658ac33edf467d599e27c35366 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_301fb765eec0094106e27ee2b0b4b281 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e93aa446e74e856a0ed2cd97b2513f0c = $(`<div id="html_e93aa446e74e856a0ed2cd97b2513f0c" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE GARCÍA ROVIRA<br> <b>Comuna:</b> COMUNA 15 CENTRO<br> <b>Barrio:</b> GARCÍA ROVIRA<br> </div>`)[0];
+                popup_301fb765eec0094106e27ee2b0b4b281.setContent(html_e93aa446e74e856a0ed2cd97b2513f0c);
+            
+        
+
+        marker_79a1eeaf6690a0c5afb0145238cb79a5.bindPopup(popup_301fb765eec0094106e27ee2b0b4b281)
+        ;
+
+        
+    
+    
+                marker_79a1eeaf6690a0c5afb0145238cb79a5.setIcon(icon_e7d5c6658ac33edf467d599e27c35366);
+            
+    
+            var marker_dc77560236e53b1cf456a41593319204 = L.marker(
+                [7.122105555555555, -73.13465555555557],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_e5445000578631cc286038cc9243ee62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b85b4434473608c5c0c47bd38207edb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f09bcb14addf74bbcce351ad133ea49a = $(`<div id="html_f09bcb14addf74bbcce351ad133ea49a" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE GIRARDOT<br> <b>Comuna:</b> COMUNA 4 OCCIDENTAL<br> <b>Barrio:</b> GIRARDOT<br> </div>`)[0];
+                popup_7b85b4434473608c5c0c47bd38207edb.setContent(html_f09bcb14addf74bbcce351ad133ea49a);
+            
+        
+
+        marker_dc77560236e53b1cf456a41593319204.bindPopup(popup_7b85b4434473608c5c0c47bd38207edb)
+        ;
+
+        
+    
+    
+                marker_dc77560236e53b1cf456a41593319204.setIcon(icon_e5445000578631cc286038cc9243ee62);
+            
+    
+            var marker_30fda784e659e74b4836245ce2159318 = L.marker(
+                [7.146127777777778, -73.1252111111111],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_1f335123098f7207207b7f6411d2bd00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1a1b74095b8d3b966a12e3527d6620f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_291c1bb3bd752699eb725544200bedf0 = $(`<div id="html_291c1bb3bd752699eb725544200bedf0" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE KIOSKO ESPERANZA I<br> <b>Comuna:</b> COMUNA 1 NORTE<br> <b>Barrio:</b> LA ESPERANZA I<br> </div>`)[0];
+                popup_c1a1b74095b8d3b966a12e3527d6620f.setContent(html_291c1bb3bd752699eb725544200bedf0);
+            
+        
+
+        marker_30fda784e659e74b4836245ce2159318.bindPopup(popup_c1a1b74095b8d3b966a12e3527d6620f)
+        ;
+
+        
+    
+    
+                marker_30fda784e659e74b4836245ce2159318.setIcon(icon_1f335123098f7207207b7f6411d2bd00);
+            
+    
+            var marker_5288060f19c00db1995f8a6968431de8 = L.marker(
+                [7.104233333333333, -73.1147],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_d2c39659d226d321580b1e6664c0c7ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_373252c9e40ed533aa8e90e5df062204 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_67980460e98d591807fdb37f9b504bd9 = $(`<div id="html_67980460e98d591807fdb37f9b504bd9" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE LA CEIBA<br> <b>Comuna:</b> COMUNA 6 LA CONCORDIA<br> <b>Barrio:</b> LA CEIBA<br> </div>`)[0];
+                popup_373252c9e40ed533aa8e90e5df062204.setContent(html_67980460e98d591807fdb37f9b504bd9);
+            
+        
+
+        marker_5288060f19c00db1995f8a6968431de8.bindPopup(popup_373252c9e40ed533aa8e90e5df062204)
+        ;
+
+        
+    
+    
+                marker_5288060f19c00db1995f8a6968431de8.setIcon(icon_d2c39659d226d321580b1e6664c0c7ca);
+            
+    
+            var marker_34dc892d4a4ab2dfbd7ff9fc83a43f0f = L.marker(
+                [7.113386111111111, -73.11834166666667],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_66d0df0d1ac78cb7de72cf384c0356da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36c274fc4ec80ebbf36c1769c5bb650c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b513de359f1db744677786baae437cf = $(`<div id="html_3b513de359f1db744677786baae437cf" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE Y PLAZA LA CONCORDIA<br> <b>Comuna:</b> COMUNA 6 LA CONCORDIA<br> <b>Barrio:</b> LA CONCORDIA<br> </div>`)[0];
+                popup_36c274fc4ec80ebbf36c1769c5bb650c.setContent(html_3b513de359f1db744677786baae437cf);
+            
+        
+
+        marker_34dc892d4a4ab2dfbd7ff9fc83a43f0f.bindPopup(popup_36c274fc4ec80ebbf36c1769c5bb650c)
+        ;
+
+        
+    
+    
+                marker_34dc892d4a4ab2dfbd7ff9fc83a43f0f.setIcon(icon_66d0df0d1ac78cb7de72cf384c0356da);
+            
+    
+            var marker_fd6793d686e8708cde931995215efec3 = L.marker(
+                [7.1105222222222215, -73.13973055555556],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_0aa724c2b3419a335f5ff999e0beb614 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c7c7f6d3fd2bd5f2d37269275184b39 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_42c66e14e626d30d7106affb1de101c9 = $(`<div id="html_42c66e14e626d30d7106affb1de101c9" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE PRINCIPAL LA JOYA<br> <b>Comuna:</b> COMUNA 5 GARCIA ROVIRA<br> <b>Barrio:</b> LA JOYA<br> </div>`)[0];
+                popup_9c7c7f6d3fd2bd5f2d37269275184b39.setContent(html_42c66e14e626d30d7106affb1de101c9);
+            
+        
+
+        marker_fd6793d686e8708cde931995215efec3.bindPopup(popup_9c7c7f6d3fd2bd5f2d37269275184b39)
+        ;
+
+        
+    
+    
+                marker_fd6793d686e8708cde931995215efec3.setIcon(icon_0aa724c2b3419a335f5ff999e0beb614);
+            
+    
+            var marker_fa3f8bec3d5d13f3e5dfa9665601080b = L.marker(
+                [7.125619444444444, -73.10761666666666],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_67491d09990d40ac6e854061246d60d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_81c9a6804362f91023810ae9aff07ab8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_89f943193044cc4d8472392006153b8e = $(`<div id="html_89f943193044cc4d8472392006153b8e" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CENTRO RECREATIVO LAS AMÉRICAS<br> <b>Comuna:</b> COMUNA 13 ORIENTAL<br> <b>Barrio:</b> ALVAREZ<br> </div>`)[0];
+                popup_81c9a6804362f91023810ae9aff07ab8.setContent(html_89f943193044cc4d8472392006153b8e);
+            
+        
+
+        marker_fa3f8bec3d5d13f3e5dfa9665601080b.bindPopup(popup_81c9a6804362f91023810ae9aff07ab8)
+        ;
+
+        
+    
+    
+                marker_fa3f8bec3d5d13f3e5dfa9665601080b.setIcon(icon_67491d09990d40ac6e854061246d60d9);
+            
+    
+            var marker_99ff6fa0e577eaa4573fc85513f4cc52 = L.marker(
+                [7.103366666666666, -73.12138055555555],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_1a4192cfe0c8e2bc601af046820b7b02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a27dabbd2df51da3d30ef0a89773075d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a329501c3b89597471974c5e1fb4eb6c = $(`<div id="html_a329501c3b89597471974c5e1fb4eb6c" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE LAS CIGARRAS<br> <b>Comuna:</b> COMUNA 7 CIUDADELA<br> <b>Barrio:</b> REAL DE MINAS<br> </div>`)[0];
+                popup_a27dabbd2df51da3d30ef0a89773075d.setContent(html_a329501c3b89597471974c5e1fb4eb6c);
+            
+        
+
+        marker_99ff6fa0e577eaa4573fc85513f4cc52.bindPopup(popup_a27dabbd2df51da3d30ef0a89773075d)
+        ;
+
+        
+    
+    
+                marker_99ff6fa0e577eaa4573fc85513f4cc52.setIcon(icon_1a4192cfe0c8e2bc601af046820b7b02);
+            
+    
+            var marker_9f7057ec8dd05c1c2c1be4a9a4b727b0 = L.marker(
+                [7.119627777777778, -73.11231388888888],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_fee8e2c41fc8a9ede9432882de7eec35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ddf3bf442f54db46f5d84030977252e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c8332101b5c64e320da433a8efea900 = $(`<div id="html_0c8332101b5c64e320da433a8efea900" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE LAS PALMAS<br> <b>Comuna:</b> COMUNA 12 CABECERA DEL LLANO<br> <b>Barrio:</b> SOTOMAYOR<br> </div>`)[0];
+                popup_7ddf3bf442f54db46f5d84030977252e.setContent(html_0c8332101b5c64e320da433a8efea900);
+            
+        
+
+        marker_9f7057ec8dd05c1c2c1be4a9a4b727b0.bindPopup(popup_7ddf3bf442f54db46f5d84030977252e)
+        ;
+
+        
+    
+    
+                marker_9f7057ec8dd05c1c2c1be4a9a4b727b0.setIcon(icon_fee8e2c41fc8a9ede9432882de7eec35);
+            
+    
+            var marker_4ba6298ba3181827f4b4160d66f88afc = L.marker(
+                [7.0990111111111105, -73.12204166666666],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_0192a3ff56f88531ca28dd4e34463a17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ea4776de8ad260a24da28179fa53835 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9421f8e54805f4ab8ff62993fb8fa3b0 = $(`<div id="html_9421f8e54805f4ab8ff62993fb8fa3b0" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE LOS CANELOS<br> <b>Comuna:</b> COMUNA 8 SUR OCCIDENTE<br> <b>Barrio:</b> LOS CANELOS<br> </div>`)[0];
+                popup_8ea4776de8ad260a24da28179fa53835.setContent(html_9421f8e54805f4ab8ff62993fb8fa3b0);
+            
+        
+
+        marker_4ba6298ba3181827f4b4160d66f88afc.bindPopup(popup_8ea4776de8ad260a24da28179fa53835)
+        ;
+
+        
+    
+    
+                marker_4ba6298ba3181827f4b4160d66f88afc.setIcon(icon_0192a3ff56f88531ca28dd4e34463a17);
+            
+    
+            var marker_5bac9296b8f3337d50b38c9f8746a954 = L.marker(
+                [7.123911111111111, -73.10813055555555],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_d6b90da740a2f80fc3acc175d5ab0dcd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee99e85c65d67f4cbebfc731f912cf98 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e7f680a70b09fc099d5a9a8ae80192bc = $(`<div id="html_e7f680a70b09fc099d5a9a8ae80192bc" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE LOS LEONES<br> <b>Comuna:</b> COMUNA 12 CABECERA DEL LLANO<br> <b>Barrio:</b> CABECERA DEL LLANO<br> </div>`)[0];
+                popup_ee99e85c65d67f4cbebfc731f912cf98.setContent(html_e7f680a70b09fc099d5a9a8ae80192bc);
+            
+        
+
+        marker_5bac9296b8f3337d50b38c9f8746a954.bindPopup(popup_ee99e85c65d67f4cbebfc731f912cf98)
+        ;
+
+        
+    
+    
+                marker_5bac9296b8f3337d50b38c9f8746a954.setIcon(icon_d6b90da740a2f80fc3acc175d5ab0dcd);
+            
+    
+            var marker_c25fd499fd597776777fc55adcefb60c = L.marker(
+                [7.093211111111111, -73.13319166666666],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_866a67f374315f5435b84567d5591c17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f59728f195242aa04ae981f8cf0d492c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d7ca43bae80c0d9b357c7bc2cf6db32 = $(`<div id="html_3d7ca43bae80c0d9b357c7bc2cf6db32" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE MONTERREDONDO<br> <b>Comuna:</b> COMUNA 17 MUTIS<br> <b>Barrio:</b> MONTERREDONDO<br> </div>`)[0];
+                popup_f59728f195242aa04ae981f8cf0d492c.setContent(html_3d7ca43bae80c0d9b357c7bc2cf6db32);
+            
+        
+
+        marker_c25fd499fd597776777fc55adcefb60c.bindPopup(popup_f59728f195242aa04ae981f8cf0d492c)
+        ;
+
+        
+    
+    
+                marker_c25fd499fd597776777fc55adcefb60c.setIcon(icon_866a67f374315f5435b84567d5591c17);
+            
+    
+            var marker_83db4fd75a031cf644ac089ce4e77d15 = L.marker(
+                [7.098788888888889, -73.129875],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_6d9e9ca9e33b3fbff2605a18e31347c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fea2c1535b4bd1b4fde75e128ba331a8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db038be286ed76fef70229a67e68330b = $(`<div id="html_db038be286ed76fef70229a67e68330b" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE LAS ARDILLAS<br> <b>Comuna:</b> COMUNA 17 MUTIS<br> <b>Barrio:</b> MUTIS<br> </div>`)[0];
+                popup_fea2c1535b4bd1b4fde75e128ba331a8.setContent(html_db038be286ed76fef70229a67e68330b);
+            
+        
+
+        marker_83db4fd75a031cf644ac089ce4e77d15.bindPopup(popup_fea2c1535b4bd1b4fde75e128ba331a8)
+        ;
+
+        
+    
+    
+                marker_83db4fd75a031cf644ac089ce4e77d15.setIcon(icon_6d9e9ca9e33b3fbff2605a18e31347c1);
+            
+    
+            var marker_a987a4845b50a9b792fcae54e9939c9e = L.marker(
+                [7.113541666666666, -73.12787777777777],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_56ac1ba489127804bd412f59a3bf0320 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5947fbedaa762f053c7e01ed23718eb1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_01da2a9bdd762d4425c9ceff89329240 = $(`<div id="html_01da2a9bdd762d4425c9ceff89329240" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE ROMERO<br> <b>Comuna:</b> COMUNA 15 CENTRO<br> <b>Barrio:</b> GARCÍA ROVIRA<br> </div>`)[0];
+                popup_5947fbedaa762f053c7e01ed23718eb1.setContent(html_01da2a9bdd762d4425c9ceff89329240);
+            
+        
+
+        marker_a987a4845b50a9b792fcae54e9939c9e.bindPopup(popup_5947fbedaa762f053c7e01ed23718eb1)
+        ;
+
+        
+    
+    
+                marker_a987a4845b50a9b792fcae54e9939c9e.setIcon(icon_56ac1ba489127804bd412f59a3bf0320);
+            
+    
+            var marker_8b6b641525eb23f52bd9e803652eb243 = L.marker(
+                [7.143727777777778, -73.12576944444444],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_34598f40734fdaecc51a6120652a582b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea3b48cf1279f94069a03d82e61e043f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e786910f4a842486e4d6487b4432651b = $(`<div id="html_e786910f4a842486e4d6487b4432651b" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE SAN CRISTÓBAL NORTE<br> <b>Comuna:</b> COMUNA 2 NORORIENTAL<br> <b>Barrio:</b> SAN CRISTÓBAL<br> </div>`)[0];
+                popup_ea3b48cf1279f94069a03d82e61e043f.setContent(html_e786910f4a842486e4d6487b4432651b);
+            
+        
+
+        marker_8b6b641525eb23f52bd9e803652eb243.bindPopup(popup_ea3b48cf1279f94069a03d82e61e043f)
+        ;
+
+        
+    
+    
+                marker_8b6b641525eb23f52bd9e803652eb243.setIcon(icon_34598f40734fdaecc51a6120652a582b);
+            
+    
+            var marker_36af06e35875d8c5961a1f15182fa203 = L.marker(
+                [7.1184666666666665, -73.10970833333333],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_9022bb6e6cbf1da76beafe36ee1a93c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8a5d6137f2f0142a34f0026a4c9a247 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94b74693bceb5d0fe5ce652389b3be57 = $(`<div id="html_94b74693bceb5d0fe5ce652389b3be57" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE SAN PÍO<br> <b>Comuna:</b> COMUNA 12 CABECERA DEL LLANO<br> <b>Barrio:</b> CABECERA DEL LLANO<br> </div>`)[0];
+                popup_a8a5d6137f2f0142a34f0026a4c9a247.setContent(html_94b74693bceb5d0fe5ce652389b3be57);
+            
+        
+
+        marker_36af06e35875d8c5961a1f15182fa203.bindPopup(popup_a8a5d6137f2f0142a34f0026a4c9a247)
+        ;
+
+        
+    
+    
+                marker_36af06e35875d8c5961a1f15182fa203.setIcon(icon_9022bb6e6cbf1da76beafe36ee1a93c4);
+            
+    
+            var marker_96fa77675eead71a1742a7980453f38e = L.marker(
+                [7.119538888888888, -73.12271944444444],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_789cb2db2895f9ecadb57e5c55be792c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46442520c2b21f3209a87466c23e30f9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5490f8b9ff99255d8a60efcadd4b56b = $(`<div id="html_d5490f8b9ff99255d8a60efcadd4b56b" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE SANTANDER<br> <b>Comuna:</b> COMUNA 15 CENTRO<br> <b>Barrio:</b> CENTRO<br> </div>`)[0];
+                popup_46442520c2b21f3209a87466c23e30f9.setContent(html_d5490f8b9ff99255d8a60efcadd4b56b);
+            
+        
+
+        marker_96fa77675eead71a1742a7980453f38e.bindPopup(popup_46442520c2b21f3209a87466c23e30f9)
+        ;
+
+        
+    
+    
+                marker_96fa77675eead71a1742a7980453f38e.setIcon(icon_789cb2db2895f9ecadb57e5c55be792c);
+            
+    
+            var marker_ff0d2b63bdfe4db2f3b097790524fc6c = L.marker(
+                [7.142488888888889, -73.12798888888888],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_ab9cbbdae45315884bdc999b6f960fcc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f60a9e39e33cfc4e9e08ae098d3ed126 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_73aba0c9013ec3a6e3316ac161f12152 = $(`<div id="html_73aba0c9013ec3a6e3316ac161f12152" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> TRANSICIÓN IV<br> <b>Comuna:</b> COMUNA 2 NORORIENTAL<br> <b>Barrio:</b> TRANSICIÓN IV<br> </div>`)[0];
+                popup_f60a9e39e33cfc4e9e08ae098d3ed126.setContent(html_73aba0c9013ec3a6e3316ac161f12152);
+            
+        
+
+        marker_ff0d2b63bdfe4db2f3b097790524fc6c.bindPopup(popup_f60a9e39e33cfc4e9e08ae098d3ed126)
+        ;
+
+        
+    
+    
+                marker_ff0d2b63bdfe4db2f3b097790524fc6c.setIcon(icon_ab9cbbdae45315884bdc999b6f960fcc);
+            
+    
+            var marker_4d4198accb2d1600d8787720f267e528 = L.marker(
+                [7.115044444444444, -73.1147111111111],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_d916582ac4b8899e936fab2ac3c87c36 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7df048bfb5b7a8bd0f425506f979e158 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6133878a92fb09f4f2b8487840649d08 = $(`<div id="html_6133878a92fb09f4f2b8487840649d08" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE TURBAY<br> <b>Comuna:</b> COMUNA 12 CABECERA DEL LLANO<br> <b>Barrio:</b> SOTOMAYOR<br> </div>`)[0];
+                popup_7df048bfb5b7a8bd0f425506f979e158.setContent(html_6133878a92fb09f4f2b8487840649d08);
+            
+        
+
+        marker_4d4198accb2d1600d8787720f267e528.bindPopup(popup_7df048bfb5b7a8bd0f425506f979e158)
+        ;
+
+        
+    
+    
+                marker_4d4198accb2d1600d8787720f267e528.setIcon(icon_d916582ac4b8899e936fab2ac3c87c36);
+            
+    
+            var marker_afd762787d6faa34843573ed747b0153 = L.marker(
+                [7.118186111111111, -73.12761111111111],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_d62211fecc83f3a47210fd1fba00f2ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e13108505c5f1803776307d56e55359 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_235b3c8fe6c2d2a786f17c96aa57cc8e = $(`<div id="html_235b3c8fe6c2d2a786f17c96aa57cc8e" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PASEO COMERCIO I<br> <b>Comuna:</b> COMUNA 15 CENTRO<br> <b>Barrio:</b> GARCÍA ROVIRA<br> </div>`)[0];
+                popup_3e13108505c5f1803776307d56e55359.setContent(html_235b3c8fe6c2d2a786f17c96aa57cc8e);
+            
+        
+
+        marker_afd762787d6faa34843573ed747b0153.bindPopup(popup_3e13108505c5f1803776307d56e55359)
+        ;
+
+        
+    
+    
+                marker_afd762787d6faa34843573ed747b0153.setIcon(icon_d62211fecc83f3a47210fd1fba00f2ff);
+            
+    
+            var marker_37c8fd7d1a156b286c2fc232ecac4cdc = L.marker(
+                [7.118888888888889, -73.12580277777776],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_218a6d9ba11a56f80b78575862d6a9a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4c68d5a6994430bee57acc516ee1e51 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6250827711f97059f350647124733a1c = $(`<div id="html_6250827711f97059f350647124733a1c" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PASEO DEL COMERCIO II<br> <b>Comuna:</b> COMUNA 15 CENTRO<br> <b>Barrio:</b> CENTRO<br> </div>`)[0];
+                popup_b4c68d5a6994430bee57acc516ee1e51.setContent(html_6250827711f97059f350647124733a1c);
+            
+        
+
+        marker_37c8fd7d1a156b286c2fc232ecac4cdc.bindPopup(popup_b4c68d5a6994430bee57acc516ee1e51)
+        ;
+
+        
+    
+    
+                marker_37c8fd7d1a156b286c2fc232ecac4cdc.setIcon(icon_218a6d9ba11a56f80b78575862d6a9a4);
+            
+    
+            var marker_742914501fd44740bc20bb5f1825f9eb = L.marker(
+                [7.104794444444444, -73.124675],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_fd83e9f26e52af47c6260c608972139c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6346e3ad6f6454cba9db44d382bea22 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_18b0f70c253d044ce036809451b71d06 = $(`<div id="html_18b0f70c253d044ce036809451b71d06" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PATINÓDROMO ROBERTO GARCÍA PEÑA<br> <b>Comuna:</b> COMUNA 7 CIUDADELA<br> <b>Barrio:</b> REAL DE MINAS<br> </div>`)[0];
+                popup_c6346e3ad6f6454cba9db44d382bea22.setContent(html_18b0f70c253d044ce036809451b71d06);
+            
+        
+
+        marker_742914501fd44740bc20bb5f1825f9eb.bindPopup(popup_c6346e3ad6f6454cba9db44d382bea22)
+        ;
+
+        
+    
+    
+                marker_742914501fd44740bc20bb5f1825f9eb.setIcon(icon_fd83e9f26e52af47c6260c608972139c);
+            
+    
+            var marker_eae8aee912ba63416a9df2ca492409ab = L.marker(
+                [7.127283333333333, -73.11212222222221],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_168762e6314b4411197d3e83d0b9b43c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7fb45936d7d9201459c3c4114270746b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_121d42a9af9651a8eb30dfdae23c242f = $(`<div id="html_121d42a9af9651a8eb30dfdae23c242f" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PLAZA DE MERCADO GUARÍN<br> <b>Comuna:</b> COMUNA 13 ORIENTAL<br> <b>Barrio:</b> ALVAREZ<br> </div>`)[0];
+                popup_7fb45936d7d9201459c3c4114270746b.setContent(html_121d42a9af9651a8eb30dfdae23c242f);
+            
+        
+
+        marker_eae8aee912ba63416a9df2ca492409ab.bindPopup(popup_7fb45936d7d9201459c3c4114270746b)
+        ;
+
+        
+    
+    
+                marker_eae8aee912ba63416a9df2ca492409ab.setIcon(icon_168762e6314b4411197d3e83d0b9b43c);
+            
+    
+            var marker_59af5660b156ee4a310c5f9f91185a45 = L.marker(
+                [7.152411111111111, -73.13326944444444],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_be1ec78177da247aee2e424efcdb75b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2ba2954b1148fea665063f89a8630a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1df38f3ae0b100b74f835aaf5cd8ed59 = $(`<div id="html_1df38f3ae0b100b74f835aaf5cd8ed59" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PLAZA DE MERCADO ALBERTO RUEDA NORTE<br> <b>Comuna:</b> COMUNA 1 NORTE<br> <b>Barrio:</b> KENNEDY NORTE<br> </div>`)[0];
+                popup_e2ba2954b1148fea665063f89a8630a6.setContent(html_1df38f3ae0b100b74f835aaf5cd8ed59);
+            
+        
+
+        marker_59af5660b156ee4a310c5f9f91185a45.bindPopup(popup_e2ba2954b1148fea665063f89a8630a6)
+        ;
+
+        
+    
+    
+                marker_59af5660b156ee4a310c5f9f91185a45.setIcon(icon_be1ec78177da247aee2e424efcdb75b2);
+            
+    
+            var marker_555f36ff3dbf1a5662290f18405c50de = L.marker(
+                [7.135111111111112, -73.12484444444443],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_61c686b9a6957f6b96105b81c39e7db6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dbbdeea2481255d37a89cbe9318aff37 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d720f087fe347c7f77a7c5f117800228 = $(`<div id="html_d720f087fe347c7f77a7c5f117800228" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PLAZA DE MERCADO SAN FRANCISCO<br> <b>Comuna:</b> COMUNA 3 SAN FRANCISCO<br> <b>Barrio:</b> MUTUALIDAD<br> </div>`)[0];
+                popup_dbbdeea2481255d37a89cbe9318aff37.setContent(html_d720f087fe347c7f77a7c5f117800228);
+            
+        
+
+        marker_555f36ff3dbf1a5662290f18405c50de.bindPopup(popup_dbbdeea2481255d37a89cbe9318aff37)
+        ;
+
+        
+    
+    
+                marker_555f36ff3dbf1a5662290f18405c50de.setIcon(icon_61c686b9a6957f6b96105b81c39e7db6);
+            
+    
+            var marker_e62ae0b041091bb46f86be58384c2414 = L.marker(
+                [7.1178888888888885, -73.13085277777778],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_969d2e41cb8fffb0c9103a7980bbaa70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b65590d915c7fb8ce597c4a3bc61306a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_732cafb4f256d68d36849458a7840b85 = $(`<div id="html_732cafb4f256d68d36849458a7840b85" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PLAZOLETA DE LA DEMOCRACIA<br> <b>Comuna:</b> COMUNA 15 CENTRO<br> <b>Barrio:</b> GARCÍA ROVIRA<br> </div>`)[0];
+                popup_b65590d915c7fb8ce597c4a3bc61306a.setContent(html_732cafb4f256d68d36849458a7840b85);
+            
+        
+
+        marker_e62ae0b041091bb46f86be58384c2414.bindPopup(popup_b65590d915c7fb8ce597c4a3bc61306a)
+        ;
+
+        
+    
+    
+                marker_e62ae0b041091bb46f86be58384c2414.setIcon(icon_969d2e41cb8fffb0c9103a7980bbaa70);
+            
+    
+            var marker_da0dc02ed9ad3a9995450434c9e1852f = L.marker(
+                [7.1156138888888885, -73.134325],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_b56110d4f5e6efc142dc138699c599be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e884fcc5f6d6a74ed87869372560742a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce7d8bbdde5b138a053929d5c629bd74 = $(`<div id="html_ce7d8bbdde5b138a053929d5c629bd74" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CENTRO RECREATIVO LA JOYA<br> <b>Comuna:</b> COMUNA 5 GARCIA ROVIRA<br> <b>Barrio:</b> ALFONSO LOPEZ<br> </div>`)[0];
+                popup_e884fcc5f6d6a74ed87869372560742a.setContent(html_ce7d8bbdde5b138a053929d5c629bd74);
+            
+        
+
+        marker_da0dc02ed9ad3a9995450434c9e1852f.bindPopup(popup_e884fcc5f6d6a74ed87869372560742a)
+        ;
+
+        
+    
+    
+                marker_da0dc02ed9ad3a9995450434c9e1852f.setIcon(icon_b56110d4f5e6efc142dc138699c599be);
+            
+    
+            var marker_7d4c9c05972383b5c1f5e338014cd686 = L.marker(
+                [7.098808333333333, -73.11101111111111],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_39bfee3e545c207687cac739ee51f541 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c351ccda5aa01b387c3766f772cdbae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e345f3eebc41766fc37e23f9b07ee48 = $(`<div id="html_1e345f3eebc41766fc37e23f9b07ee48" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> SAN MARTÍN - PARQUE EXTREMO<br> <b>Comuna:</b> COMUNA 9 LA PEDREGOSA<br> <b>Barrio:</b> SAN MARTIN<br> </div>`)[0];
+                popup_7c351ccda5aa01b387c3766f772cdbae.setContent(html_1e345f3eebc41766fc37e23f9b07ee48);
+            
+        
+
+        marker_7d4c9c05972383b5c1f5e338014cd686.bindPopup(popup_7c351ccda5aa01b387c3766f772cdbae)
+        ;
+
+        
+    
+    
+                marker_7d4c9c05972383b5c1f5e338014cd686.setIcon(icon_39bfee3e545c207687cac739ee51f541);
+            
+    
+            var marker_7327c7dd5c14db6c81b4ae452826e89f = L.marker(
+                [7.087802777777777, -73.12936111111111],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_6ecdc646ce4e8bef108b3632db927596 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d92b648a54ce189124e7603947bb3a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_707b91451823980983b7647313b03593 = $(`<div id="html_707b91451823980983b7647313b03593" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> TERMINAL DE TRANSPORTES DE BGA.<br> <b>Comuna:</b> COMUNA 11 SUR<br> <b>Barrio:</b> BUCARAMANGA<br> </div>`)[0];
+                popup_4d92b648a54ce189124e7603947bb3a5.setContent(html_707b91451823980983b7647313b03593);
+            
+        
+
+        marker_7327c7dd5c14db6c81b4ae452826e89f.bindPopup(popup_4d92b648a54ce189124e7603947bb3a5)
+        ;
+
+        
+    
+    
+                marker_7327c7dd5c14db6c81b4ae452826e89f.setIcon(icon_6ecdc646ce4e8bef108b3632db927596);
+            
+    
+            var marker_162cc7626d827fd0aea8666f53011d50 = L.marker(
+                [7.128958333333333, -73.09379444444444],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_808d7eb7b0c9a231b5288dfb652c6b73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90a20605cbbdf318836dfd99524ea006 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1834fb317843f5b705b6e05a1f1080cc = $(`<div id="html_1834fb317843f5b705b6e05a1f1080cc" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> CENTRO COMUNAL BUENA VISTA<br> <b>Comuna:</b> COMUNA 14 MORRORICO<br> <b>Barrio:</b> MORRORICO<br> </div>`)[0];
+                popup_90a20605cbbdf318836dfd99524ea006.setContent(html_1834fb317843f5b705b6e05a1f1080cc);
+            
+        
+
+        marker_162cc7626d827fd0aea8666f53011d50.bindPopup(popup_90a20605cbbdf318836dfd99524ea006)
+        ;
+
+        
+    
+    
+                marker_162cc7626d827fd0aea8666f53011d50.setIcon(icon_808d7eb7b0c9a231b5288dfb652c6b73);
+            
+    
+            var marker_8f0428f898ae5e3331fdde4bfd28fa49 = L.marker(
+                [7.1498388888888895, -73.14897222222223],
+                {
+}
+            ).addTo(marker_cluster_590ead82496c18c94ad7cfa673d4bb97);
+        
+    
+            var icon_f7d1a143c6355a574db5011edf2e4cec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wifi",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4778f9500d5c944190d27f795fdcc6a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c3287a5438d9a29480dfd712471c03c1 = $(`<div id="html_c3287a5438d9a29480dfd712471c03c1" style="width: 100.0%; height: 100.0%;"> <b>Zona WiFi:</b> PARQUE LINEAL RIO DE ORO<br> <b>Comuna:</b> COMUNA 1 NORTE<br> <b>Barrio:</b> VILLAS DE SAN IGNACIO<br> </div>`)[0];
+                popup_4778f9500d5c944190d27f795fdcc6a3.setContent(html_c3287a5438d9a29480dfd712471c03c1);
+            
+        
+
+        marker_8f0428f898ae5e3331fdde4bfd28fa49.bindPopup(popup_4778f9500d5c944190d27f795fdcc6a3)
+        ;
+
+        
+    
+    
+                marker_8f0428f898ae5e3331fdde4bfd28fa49.setIcon(icon_f7d1a143c6355a574db5011edf2e4cec);
+            
+    
+            marker_cluster_590ead82496c18c94ad7cfa673d4bb97.addTo(map_57a576c9b8672b3a2e51681617bcb387);
+        
+</script>
+</html>

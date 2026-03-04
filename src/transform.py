@@ -19,4 +19,5 @@ def coord_to_decimal(coord: str):
 
 def clean_data(df, coord: str):
     df[coord] = df[coord].apply(coord_to_decimal)
+    df = df.loc[~(df['longitud'] == "NaN")]
     return df
